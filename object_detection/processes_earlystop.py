@@ -297,7 +297,7 @@ def infer(args, unlabeled, ckpt_file):
                 # add row to db
                 add_index(conn, added_ind, logits_np)
 
-            for i, logit in enumerate():
+            for i, logit in enumerate(predictions):
                 logit = logit.cpu().numpy()
                 added_ind = unlabeledList.pop(0)
                 add_index(conn2, added_ind, logit)
