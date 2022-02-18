@@ -1,7 +1,7 @@
 import argparse
 import yaml, json
-from alectio_sdk.flask_wrapper import Pipeline
-from process import train, test, infer, getdatasetstate
+from alectio_sdk.sdk import Pipeline
+from processes import train, test, infer, getdatasetstate
 
 with open("./config.yaml", "r") as stream:
     args = yaml.safe_load(stream)
@@ -14,7 +14,8 @@ AlectioPipeline = Pipeline(
     infer_fn=infer,
     getstate_fn=getdatasetstate,
     args=args,
-    token='<your token here'
+    token="293f2e25824d4db1bae495a08c27a88c"
 )
 
-app = AlectioPipeline.app
+if __name__ == "__main__":
+    AlectioPipeline()
