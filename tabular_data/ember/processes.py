@@ -7,7 +7,7 @@ import lightgbm as lgb
 import yaml
 import pandas as pd
 import numpy as np
-import ember
+from ember import ember
 import argparse
 import joblib
 import pickle

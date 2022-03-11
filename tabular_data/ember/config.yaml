@@ -1,5 +1,5 @@
 sample_payload: 'sample_payload.json'
-DATA_DIR : "./data/"
+DATA_DIR : "./ember/"
 EXPT_DIR : "./log"
 TEST_SIZE : 25000
 TRAIN_SIZE : 100000
