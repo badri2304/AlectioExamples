@@ -1,0 +1,8 @@
+train_batch_size: 32
+test_batch_size: 32
+lr: 2e-5
+epochs: 2
+exp_name: "test_senti"
+sample_payload: 'sample_payload.json'
+EXPT_DIR : "./log"
+LOG_DIR : "./log"
